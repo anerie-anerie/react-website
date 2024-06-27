@@ -29,6 +29,27 @@
                     color: inherit;
      
                 }
+            
+        }
+        .right{
+            
+            .norm{
+                font-size: 27px;
+                font-weight: 500;
+                text-decoration: none;
+                color: inherit;
+                padding-right: 30px;
+                padding-bottom: 40px;
+                align-items: center;
+            }
+
+            .logoFor{
+                height: 40px; /* size of logo */
+                width: 40px; 
+                padding-right: 30px;
+            }
+
+
         }
     }
 }
