@@ -1,6 +1,6 @@
 .intro {
     position: relative;
-    background-color: #FFCF72; /* This will be a fallback color */
+    background-color: #513edf; /* This will be a fallback color */
     overflow: hidden; /* This ensures the pseudo-element stays within the bounds of the parent */
 
     &::before {
