@@ -5,3 +5,4 @@ use the link to view the website: https://anerie-anerie.github.io/react-website/
 > git add .
 > git commit -m "msg"
 > git push
+> npm run deploy (to redeploy the real website)
