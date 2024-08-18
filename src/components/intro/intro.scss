@@ -16,34 +16,34 @@
         background-repeat: no-repeat; /* Prevents the image from repeating */
         z-index: 1; /* Ensure the image is behind the text */
     }
-
+}
     /* Rectangle for Intro Texts */
     .text-rectangle {
         position: absolute;
-        top: 10px; /* Adjust as needed */
+        top: 20px; /* Adjust as needed */
         left: 20px; /* Adjust as needed */
         right: 40px; /* Adjust as needed */
         background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
         padding: 20px; /* Add padding inside the rectangle */
         border-radius: 8px; /* Optional: Rounded corners */
-        z-index: 2; /* Ensure text is above the background rectangle */
+        z-index: 2; /* Ensures text is above the background rectangle */
     }
 
     .intro, .animated-typing {
         position: relative;
-        z-index: 2; /* Ensures text is above the background rectangle */
+        z-index: 2; /* Ensures text is above the pseudo-element */
         color: #fff; /* Change the color to your desired font color */
     }
 
-    .intro {
-        font-size: 24px; /* Adjust the size as needed */
-        margin: 0; /* Remove default margins */
-    }
-
-    .animated-typing {
-        font-size: 20px; /* Adjust the size as needed */
-    }
+.intro {
+    font-size: 24px; /* Adjust the size as needed */
+    margin: 0; /* Remove default margins */
 }
+
+.animated-typing {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
 
 .fullIntro p {
     color: #000; /* Change the color to your desired font color */
