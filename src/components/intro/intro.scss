@@ -1,40 +1,37 @@
 .fullIntro {
     position: relative;
-    background-color: #2E1D67; /* Fallback color */
+    background-color: #2E1D67;
     overflow: hidden; /* Ensures the pseudo-element stays within the bounds of the parent */
 
     /* Background rectangle with image */
     .background-rectangle {
         position: absolute;
-        width: 70%;
-        height: 80%; /* Adjust the height as needed */
+        top: 120px;
+        left: 10px;
+        width: 50%;
+        height: 75%; /* Adjust the height as needed */
         background-image: url('./introBg.JPG'); /* Path to your background image */
         background-size: cover; /* Ensures the image covers the entire div */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
-        z-index: 1; /* Ensures the image is behind the text */
-        color: #fff; /* Default color for text on this background */
-        justify-content: center;
-        align-items: center;
-        padding: 20px; /* Add padding if needed */
-        margin-top: 100px;
+        z-index: 1; /* Ensure the image is behind the text */
     }
 
     /* Rectangle for Intro Texts */
     .text-rectangle {
         position: absolute;
-        top: 20px; /* Adjust as needed */
+        top: 10px; /* Adjust as needed */
         left: 20px; /* Adjust as needed */
         right: 40px; /* Adjust as needed */
         background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
         padding: 20px; /* Add padding inside the rectangle */
         border-radius: 8px; /* Optional: Rounded corners */
-        z-index: 2; /* Ensures text is above the background rectangle */
+        z-index: 2; /* Ensure text is above the background rectangle */
     }
 
     .intro, .animated-typing {
         position: relative;
-        z-index: 2; /* Ensures text is above the pseudo-element */
+        z-index: 2; /* Ensures text is above the background rectangle */
         color: #fff; /* Change the color to your desired font color */
     }
 
@@ -51,5 +48,4 @@
 .fullIntro p {
     color: #000; /* Change the color to your desired font color */
     font-size: 24px; /* Change the size to your desired font size */
-    /* Additional text styles */
 }
