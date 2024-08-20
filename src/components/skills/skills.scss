@@ -1,4 +1,19 @@
 .skills{
+    position: relative;
 
     background-color:#ffcda5;
+    overflow: hidden;
+
+
+    .text-rect {
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        right: 40px; /* Adjust as needed */
+        background-color: rgba(151, 21, 51, 0.5); /* Semi-transparent background for readability */
+        padding: 20px; /* Add padding inside the rectangle */
+        border-radius: 8px; /* Optional: Rounded corners */
+        z-index: 2; /* Ensures text is above the background rectangle */
+    }
+
 }
