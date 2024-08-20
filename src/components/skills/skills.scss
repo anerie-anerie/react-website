@@ -1,19 +1,21 @@
-.skills{
+.skills {
     position: relative;
-
-    background-color:#ffcda5;
+    background-color: #ffcda5;
     overflow: hidden;
-
+    padding: 50px; /* Adjust padding as needed */
 
     .text-rect {
         position: absolute;
-        top: 20px; /* Adjust as needed */
-        left: 20px; /* Adjust as needed */
-        right: 40px; /* Adjust as needed */
-        background-color: rgba(151, 21, 51, 0.5); /* Semi-transparent background for readability */
-        padding: 20px; /* Add padding inside the rectangle */
-        border-radius: 8px; /* Optional: Rounded corners */
-        z-index: 2; /* Ensures text is above the background rectangle */
+        top: 20px;
+        left: 20px;
+        background-color: rgba(151, 21, 51, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 2;
     }
 
+    .animated-content {
+        margin-top: 100px; /* Adjust spacing as needed */
+        z-index: 2;
+    }
 }
