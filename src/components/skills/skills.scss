@@ -1,21 +1,34 @@
 .skills {
     position: relative;
-    background-color: #ffcda5;
-    overflow: hidden;
+    background-color: #ffcda5; /* Background color */
     padding: 50px; /* Adjust padding as needed */
+    overflow: hidden;
+
+    .scale-box {
+        margin: 0 auto;
+        width: 50%; /* Adjust the width as needed */
+        background-color: rgba(151, 21, 51, 0.1); /* Semi-transparent background */
+        padding: 20px; /* Padding inside the scaling box */
+        border-radius: 10px; /* Optional rounded corners */
+    }
+
+    .scroll-progress {
+        background-color: rgba(151, 21, 51, 0.5); /* More visible background */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Hide overflow if the content scales */
+    }
 
     .text-rect {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background-color: rgba(151, 21, 51, 0.5);
         padding: 20px;
-        border-radius: 8px;
-        z-index: 2;
+        color: white;
+        text-align: center;
+        font-size: 24px; /* Adjust font size */
     }
 
     .animated-content {
-        margin-top: 100px; /* Adjust spacing as needed */
-        z-index: 2;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20px;
+        color: #333;
     }
 }
