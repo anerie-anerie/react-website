@@ -1,8 +1,7 @@
-/* Global styles */
+/* Global styles - not using it for now
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #e58f8f;
   }
   
   #root {
@@ -10,11 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #e58f8f;
   }
-  
-  /* Apply a basic CSS reset */
-  * {
-    box-sizing: border-box;
-  }
+  */
+
   

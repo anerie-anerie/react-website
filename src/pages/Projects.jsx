@@ -4,7 +4,7 @@ import React from "react";
 function Projects() {
   return (
     <div>
-      <h1>About Me</h1>
+      <h1>project explorer</h1>
       <p>This is the Projects page.</p>
     </div>
   );

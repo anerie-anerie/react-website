@@ -1,42 +1,60 @@
-/* App.css */
+/* all the styling - can split into multiple css when doing each seperate page*/
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .home-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e58f8f;
+}
+
+header {
+  background-color: transparent;  /* Set the background to transparent */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #5e0737; /* Moved from index.css */
+}
+
+/* Component-specific styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 5vw;
+  margin-bottom: 10px;
+  color:antiquewhite;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*distances between buttons*/
+  gap: 3vw;
+  padding-top: 5vw;
+
+}
+
+button {
+  padding: 1vw 2vh;
+  font-size: 2vw;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347; /* Button background color */
+  color: #ffffff; /* Button text color */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1cac62; /* Button hover color */
+  color:beige;
+}
