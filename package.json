@@ -1,6 +1,6 @@
 {
-  "homepage": "http://anerie-anerie.github.io/react-website",
-  "name": "react-website",
+  "homepage": "/aneries-port",
+  "name": "aneries-port",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
