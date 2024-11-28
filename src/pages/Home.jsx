@@ -11,9 +11,9 @@ function Home() {
     <div className="home-container">
       <h1 className="home-title">Welcome to Anerie's magical portfolio!</h1>
       <div className="button-container">
-        <button onClick={() => navigate("/About")}>qui suis-je?</button>
-        <button onClick={() => navigate("/projects")}>Check out my super cool projects</button>
-        <button onClick={() => navigate("/contact")}>Call me anytime</button>
+        <button className="about-button" onClick={() => navigate("/About")}>qui suis-je?</button>
+        <button className="projects-button" onClick={() => navigate("/projects")}>Check out my super cool projects</button>
+        <button className="contact-button" onClick={() => navigate("/contact")}>Call me anytime</button>
         
       </div>
     </div>

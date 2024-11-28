@@ -1,22 +1,32 @@
 /* all the styling - can split into multiple css when doing each seperate page*/
 
+@font-face {
+  font-family: 'GamerFont';
+  src: url('../public/Gamerfont.ttf') format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'NormalFont';
+  src: url('../public/Roboto.ttf') format('truetype');
+  
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #e58f8f;
+  margin: 0vw;
+  padding: 0vw;
+  font-family: 'GamerFont', 'Arial', sans-serif;
+  background-color: #530831;
 }
 
 header {
-  background-color: transparent;  /* Set the background to transparent */
-  margin: 0; /* Remove any margin */
-  padding: 0; /* Remove any padding */
+  margin: 0vw;
 }
 
 #root {
   display: flex;
   justify-content: center;
-  background-color: #5e0737; /* Moved from index.css */
+  background-color: transparent; /* Moved from index.css */
 }
 
 /* Component-specific styles */
@@ -26,35 +36,135 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
+/* Title styling */
 .home-title {
   font-size: 5vw;
   margin-bottom: 10px;
-  color:antiquewhite;
+  color: antiquewhite;
+  position: relative; /* Required for positioning the pseudo-element */
+  overflow: visible; /* Ensures sparkles can extend outside the title */
 }
+
+/* Add sparkle animation on hover */
+.home-title:hover::after {
+  content: ""; /* Pseudo-element for the sparkles */
+  position: absolute;
+  top: 0; /* Align sparkles with the top of the title */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url('../public/darkSpark.gif'); /* Add sparkle effect as a GIF or PNG */
+  background-size: 10vw 10vw; /* Control the size of each sparkle */
+  background-repeat: repeat-x;
+  animation: sparkle-animation 2s ease-in-out infinite;
+  z-index: -1; /* Ensure sparkles are behind the text */
+}
+
+/* Keyframes for scaling the sparkle effect */
+@keyframes sparkle-animation {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.2);
+  }
+}
+
 
 .button-container {
   display: flex;
   flex-wrap: wrap;
   /*distances between buttons*/
-  gap: 3vw;
+  gap: 4vw;
   padding-top: 5vw;
+}
+
+/*specific styling for about*/
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(47, 10, 33);
+  color: whitesmoke;
 
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(47, 10, 33);
+  color: whitesmoke;
+
+}
+
+.project-container {
+  /* experimenting with different font */
+  font-family: 'NormalFont';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(47, 10, 33);
+  color: whitesmoke;
+
+}
+
+/* Button Base Styles */
 button {
-  padding: 1vw 2vh;
-  font-size: 2vw;
   border: none;
-  border-radius: 5px;
-  background-color: #ff6347; /* Button background color */
-  color: #ffffff; /* Button text color */
+  background-size: cover; /* Ensure the image covers the button area */
+  background-position: center;
   cursor: pointer;
+  opacity: 70%;
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.about-button {
+  background-image: url('../public/about.png'); /* Path to About image */
+  background-color: transparent;
+  width: 10vw; /* Specific width for About button */
+  
+}
+
+.projects-button {
+  background-image: url('../public/projects.png'); /* Path to Projects image */
+  background-color: transparent;
+  width: 15vw;
+  height: auto; /* Adjust height dynamically to maintain image aspect ratio */
+  aspect-ratio: 1 / 1.5;
+}
+
+.contact-button {
+  background-image: url('../public/contact.png'); /* Path to Contact image */
+  background-color: transparent;
+  width: 15vw;
+  height: auto; /* Adjust height dynamically to maintain image aspect ratio */
+  aspect-ratio: 1 / 1.5;
 }
 
 button:hover {
-  background-color: #1cac62; /* Button hover color */
-  color:beige;
+  transform: scale(1.05); /* Optional: Slight zoom on hover */
+  opacity: 100%;
+  /* delay for trasnform */
+  transition: transform 0.2s;
+  
 }
